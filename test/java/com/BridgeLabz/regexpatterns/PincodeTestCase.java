@@ -9,7 +9,8 @@ import org.junit.Test;
  * @author ANAND 
  * UC-1 Test case to check the PinCode 400088 is valid or not
  * UC-2 Test case to check the Alphabet at starting PinCode A400088 is valid or not 
- * UC-3 Test case to check Special Character at the end of  PinCode 400088B- is valid or not
+ * UC-3 Test case to check the special character end of PinCode 400088B- is valid or not
+ * UC-4 Test case to check the space between  PinCode 400 088 is valid or not
  *
  *****************************************/
 public class PincodeTestCase {
@@ -37,6 +38,14 @@ public class PincodeTestCase {
 	public void passThePinCodeValidationItShouldReturnValidOrNotatAlphabetatend() {
 		Pincode code = new Pincode();
 		assertFalse(code.validPinCode("400088B-")); // invalid
+		// test case passed
+	}
+
+	// UC-4 Test case for validating space between pin code 400 088
+	@Test
+	public void passThePinCodeValidationItShouldReturnValidOrNotatspaceinpincode() {
+		Pincode code = new Pincode();
+		assertTrue(code.validPinCode("400 088")); // valid
 		// test case passed
 	}
 }
