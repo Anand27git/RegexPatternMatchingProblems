@@ -7,7 +7,7 @@ import org.junit.Test;
  * 
  * @author ANAND
  * UC-1 Test case to check the PinCode 400088 is valid or not
- *
+ * UC-2 Test case to check the Alphabet at starting PinCode A400088 is valid or not
  */
 public class PincodeTestCase {
    
@@ -21,4 +21,12 @@ public class PincodeTestCase {
 		assertFalse(code.validPinCode("A78985"));   //invalid
 		//test case passed
 	}
+	
+	//UC-2 Test case for  validating alphabet at starting of pincode 400088
+		@Test
+		public void passThePinCodeValidationItShouldReturnValidOrNotatAlphabet() {
+			Pincode code = new Pincode();
+			assertFalse(code.validPinCode("A400088"));   //invalid
+			//test case passed
+		}
 }
