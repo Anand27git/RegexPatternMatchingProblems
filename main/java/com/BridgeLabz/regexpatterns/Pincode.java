@@ -8,7 +8,7 @@ import java.util.regex.*;
  * purpose: Validate the Pin code using Regular expression pattern Matching 
  * UC-1 Create regexpattern to validate Pin code 400088
  * UC-2 Check the Alphabet at starting PinCode A400088 is valid or not
- * UC-3 Check the Alphabet at starting PinCode 400088B- is valid or not
+ * UC-3 Check the Special Character at the end of  PinCode 400088B- is valid or not
  * 
  *********************/
 public class Pincode {

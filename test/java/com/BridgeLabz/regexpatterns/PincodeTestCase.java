@@ -9,7 +9,7 @@ import org.junit.Test;
  * @author ANAND 
  * UC-1 Test case to check the PinCode 400088 is valid or not
  * UC-2 Test case to check the Alphabet at starting PinCode A400088 is valid or not 
- * UC-3 Test case to check the Alphabet at starting PinCode 400088B- is valid or not
+ * UC-3 Test case to check Special Character at the end of  PinCode 400088B- is valid or not
  *
  *****************************************/
 public class PincodeTestCase {
